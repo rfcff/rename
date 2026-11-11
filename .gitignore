@@ -1,0 +1,15 @@
+# Python 构建 / 缓存产物
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# 工具运行产物（含备份与 diff，可能含源码片段，勿提交）
+.rename-out/
+temp/
+
+# 本地配置（团队共享的配置建议纳入版本控制，本地覆盖另放此文件）
+rename.config.local.json

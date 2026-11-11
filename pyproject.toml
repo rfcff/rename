@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rename-symbols"
+version = "2.0.0"
+description = "通用标识符批量重命名：目录递归 + 前缀/后缀/精确映射，默认 dry-run"
+readme = "README.md"
+requires-python = ">=3.9"
+# 运行时零第三方依赖；可选系统工具的安装命令见 README.md「安装与依赖」
+dependencies = []
+
+[project.scripts]
+rename-symbols = "rename:cli"
+
+[tool.setuptools]
+py-modules = ["rename"]
